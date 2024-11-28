@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { Box, CssBaseline } from "@mui/material";
-import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
-import { ReactNode } from "react";
-import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFnsV3";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
-import { LocalizationProvider } from "@mui/x-date-pickers";
-import theme, { poppins } from "./theme";
+import { Box, CssBaseline } from '@mui/material';
+import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import { ReactNode } from 'react';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import theme, { poppins } from './theme';
 
 /**
  * ThemeProvider component that wraps the app with necessary providers.
@@ -24,8 +24,8 @@ function ThemeProvider({ children }: { children: ReactNode }) {
           {/* Resets the CSS for consistent styling */}
           <CssBaseline />
           <Box
-            component={"body"}
-            bgcolor={"white"}
+            component={'body'}
+            bgcolor={'white'}
             className={`${poppins.variable}`}
           >
             {children}
